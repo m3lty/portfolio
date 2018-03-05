@@ -53,15 +53,10 @@ div.hidden {
 .parallaxcentercontent h3{
   font-weight: bold;
 }
-.profilephoto{
 
-}
-.profilephoto img{
-  height: 250px;
-  width: 250px;
+#profilepic img {
   border-radius: 150px;
 }
-
 hr {
   color: white;
   height: 1px;
@@ -72,6 +67,7 @@ hr {
 .profileRow{
   padding-top: 5%;
   overflow:hidden;
+  padding-bottom:5%;
 }
 
 .contentcontainer {
@@ -80,7 +76,6 @@ hr {
   background-color: #13262f;
   font-size: 15px;
   font-family: 'Quicksand', sans-serif;
-  padding-top: 3em;
 }
 
 .skillicon{
