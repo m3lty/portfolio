@@ -1,15 +1,15 @@
 body, html {
   height: 100%;
-
-
 }
 .parallaxtop{
-  background-image: url('../img/parallaxbg.jpg');
+  background-image: url('../img/parallaxbg.jpg');  
+  /* background-image: url('../img/newheader.png'); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 700px ;
+
+  height: 100vh;
 }
 .parallaxcenter{
   background-image: url('../img/parallax2.jpg');
@@ -17,12 +17,12 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px ;
+  
 }
 #title1{
 
 }
-div.hidden {
+.hidden {
   display: none;
 }
 .lessmargin{
@@ -38,7 +38,7 @@ div.hidden {
   font-size: 5em;
 }
 .parallaxheader{
-  margin-top: 10em;
+  margin-top: 20%;
 }
 .parallaxcentercontent{
   font-weight: bold;
@@ -49,17 +49,16 @@ div.hidden {
 .parallaxcentercontent h2 {
   font-size: 3em;
   font-weight: bold;
+  max-height: 200px;
 }
 .parallaxcentercontent h3{
   font-weight: bold;
-}
-.profilephoto{
-
 }
 .profilephoto img{
   height: 250px;
   width: 250px;
   border-radius: 150px;
+  margin-bottom: 1em;
 }
 
 hr {
@@ -69,23 +68,34 @@ hr {
 }
 
 
-.profileRow{
-  padding-top: 5%;
+#profileRow{
+  padding-top: 2em;
   overflow:hidden;
+  padding-bottom:2em;
 }
 
 .contentcontainer {
   min-height: 400px;
   color: white;
-  background-color: #13262f;
+  background-color: #212121;
   font-size: 15px;
   font-family: 'Quicksand', sans-serif;
   padding-top: 3em;
+  
 }
 
 .skillicon{
   color: white;
 }
+
+#buttonRow{
+  margin-top:3em;
+}
+
+#contactRow{
+  padding-top: 5em;
+}
+
 
 .contentblock{
   margin: 5em;
@@ -101,12 +111,30 @@ hr {
   overflow: hidden;
 
 }
-
+#section2Header{
+  margin-bottom:3em;
+}
 .textcontainer h2 {
   margin: 0;
   padding: 0;
   padding-top: 10px;
 }
+
+.btn-custom{
+  border-radius: 100px;
+  background-color: #212121;
+  color:white;
+  border: 1px solid white;
+  
+}
+.btn-custom:hover{
+  background: none;
+  color:white;
+}
 /* ============
 Screen Size
 ============ */
+
+#bigTitle{
+  text-shadow: -2px -2px black;
+}

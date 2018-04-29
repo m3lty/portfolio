@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,19 +12,18 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link rel="stylesheet" href="css/main.css?id=1337">
+    <link rel="stylesheet" href="css/main.css?id=444">
 
   </head>
   <body>
     <!-- Parallaxbg, header Text -->
       <div class="parallaxtop">
         <div class="container">
-          <div class="row">
+          <div class="row" id="bigTitle">
             <div class="col parallaxcontent parallaxheader">
               <h1>Adam Hoffman</h1>
-              <hr>
             <div class="hidden" id="title1">
               <h2>Developer.</h2>
             </div>
@@ -33,82 +33,107 @@
             <div class="hidden" id="title3">
               <h2>All around cool guy.</h2>
             </div>
+          </div> 
+        </div>
+        <div class="row justify-content-center" id="buttonRow">
+          <div class="col-auto "id="aboutButton">
+            <a class="btn btn-small btn-custom hidden hiddenLink" href="#profileRow">About</a>
           </div>
+          <div class="col-auto">
+            <a class="btn btn-small btn-custom hidden hiddenLink" href="#portfolioContainer">Portfolio</a>
+          </div>
+          <!-- <div class="col-auto">
+            <a href="" class="btn btn-small btn-custom hidden hiddenLink">Contact</a>
+          </div> -->
         </div>
       </div>
       </div>
+
+      <!-- <div class="parallaxcenter">
+        <div class="contentcontainer" >
+          <div class="container" >
+              <h1 class="display-4"id="profileRow">Hi, I'm Adam.</h1>
+          </div>
+          
+        </div>
+        <div class="container fullVH" id="portfolioContainer">
+          Heho
+        </div>
+
+      </div> -->
+
+
+
 <!-- start of second background image and first content block -->
     <div class="parallaxcenter">
-      <div class="contentcontainer">
+      <div class="contentcontainer" >
         <div class="container">
-          <div class="row profileRow">
-            <div class="col-12 col-md-6 order-1 profilephoto hidden" id="profilepic">
-              <img class="" src="img/me.jpeg" alt="Profile Photo">
-            </div>
-            <div class="col col-md-6 order-2">
-              <h1>Who am I?</h2>
-                <p>My name is Adam. I am currently a freelance developer based outside of Lancaster, Pennsylvania.
+
+          <div class="row">
+            <div class="col text-center profilephoto" id="profileRow">
+              <img class="" src="img/me.jpeg" alt="me">
+              <h1>Who am I?</h1>
+                <p class="lead">My name is Adam. I am currently a freelance developer based outside of Lancaster, Pennsylvania.
                 I spend the large majority of my free time expanding my knowledge on current development trends.
                 When I finally do decide to take a break, I like spending time with my beautiful girlfriend and good friends hiking the trails of Central Pennsylvania.</p>
-            </div>
+                <p>You can contact me <a href="mailto:hoffman.adam89@gmail.com">here.</a></p>
+              </div>
+
           </div>
         </div>
+        
       </div>
+      
+      <!-- end of first content container  -->
+      <!-- start of second parallax container -->
       <div class="container">
           <div class="row parallaxcontent parallaxcentercontent">
-            <div class="col-12 col-md-12 text-center">
+            <div class="col-12 col-md-12 text-center" id="section2Header">
               <h2>What do I do?</h2>
             </div>
-            <div class="col-12 col-md">
+          
+            <div class="col-12 col-md skillContainer hidden">
               <div class="icon text-center">
                 <i class="fas fa-code fa-7x"></i>
                 <h3>Front End</h3>
-                <p>CSS3, Sass, Javascript, Responsive Design, CMS(Wordpress)</p>
+                <p>CSS3, Sass, AngularJS, Javascript, Responsive Design, CMS(Wordpress).</p>
               </div>
             </div>
-            <div class="col-12 col-md">
+            <div class="col-12 col-md skillContainer hidden">
               <div class="icon text-center">
                 <i class="fas fa-database fa-7x"></i>
                 <h3>Back End</h3>
-                <p>Server Hardware, NodeJS, Express, MongoDB, Git, MySQL.</p>
+                <p>Server Hardware, Python, NodeJS, Express, MongoDB, Git, MySQL.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md skillContainer hidden">
+              <div class="icon text-center">
+                <i class="fas fa-comment-alt fa-7x"></i>
+                <h3>Other Skills</h3>
+                <p>Photoshop, FTP, SSH, SEO, Management Experience</p>
               </div>
             </div>
           </div>
-
-          <div class="row parallaxcontent parallaxcentercontent lessmargin">
-            <div class="col-12 col-md">
-              <div class="icon text-center">
-                <i class="fas fa-code fa-7x"></i>
-                <h3>Front End</h3>
-                <p>CSS3, Sass, Javascript, Responsive Design, CMS(Wordpress)</p>
-              </div>
-            </div>
-            <div class="col-12 col-md">
-              <div class="icon text-center">
-                <i class="fas fa-code fa-7x"></i>
-                <h3>Front End</h3>
-                <p>CSS3, Sass, Javascript, Responsive Design, CMS(Wordpress)</p>
-              </div>
-            </div>
-            <div class="col-12 col-md">
-              <div class="icon text-center">
-                <i class="fas fa-code fa-7x"></i>
-                <h3>Front End</h3>
-                <p>CSS3, Sass, Javascript, Responsive Design, CMS(Wordpress)</p>
-              </div>
-            </div>
-
-            </div>
-
           </div>
-      </div>
+
 
     </div>
     <div class="contentcontainer">
+      <div class="container">
+        <div class="row" id="portfolioContainer">
+          <div class="col">
+            <h1 class="text-center">Portfolio</h1>
+            <h2>Oops!</h2>
+            <p class="lead">Sorry! It looks like my Portfolio isn't set up yet! Please check out <a href="https://github.com/m3lty">my Github</a> to see a list of my projects.</p>
+          </div>
+        </div>
+                            
+        </div>
+      </div>
 
-
-    </div>
+    
 
 
   </body>
+  <script src="js/main.js"></script>
 </html>
